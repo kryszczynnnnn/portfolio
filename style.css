@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Manrope", sans-serif;
+}
+
+#nav-bar {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar nav ul{
+    margin: 5px;
+    display: flex;
+}
+
+#nav-bar nav ul li {
+    display: inline;
+    margin: 0px 15px;
+    font-size: 14px;
+    background-color: #000000;
+}
+
+a {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#nav-bar nav ul li:hover a{
+    color: #2f4ac2;
+    text-shadow: 0px 0px 100px #2f4ac2;
+}
+
+
+#welcome-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #d200fc, #0415ff);
+    height: 400px;
+    overflow: hidden;
+}
+
+#welcome-container img{
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin: 10px;
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+#welcome-container #name-container {
+    position: relative;
+    width: 220px;
+    height: 80px;
+
+}
+
+#welcome-container h2 {
+    color: #fff;
+    position: absolute;
+    font-size: 50px;
+}
+
+#welcome-container h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 01px #ffffff;
+}
+
+#welcome-container h2:nth-child(2) {
+    color: #ffffff;
+    animation: animate 4s ease-in-out infinite;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+    background-color: #ffffff;
+}
+
+#experience span {
+    margin: 15px;
+    font-weight: 600;
+}
+
+#experience #exp-icons {
+    margin: 10px;
+}
+
+#experience #exp-icons ul li {
+    position: relative;
+    display: inline;
+    border: 1px solid #efefef;
+    padding: 4px 10px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 40px;
+    transition: all 0.3s ease;
+}
+
+#html {
+    color: #ff7113;
+}
+
+#css {
+    color: #3258ff;
+}
+
+#js {
+    color: #ffe713;
+}
+
+#sql {
+    color: #d15656;
+}
+
+
+#php {
+    color: #a3a3a3;
+}
+
+#more-exp {
+    background-color: #3e61fc;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#more-exp:hover {
+    background-color: #2f4ac2;
+}
+
+#projects-title {
+    display: block;
+    margin: 10px 5px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+#projects .project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#projects .img-frame {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+#projects img {
+    position: absolute;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    transition: all 0.3s ease;
+}
+
+.info {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+#projects .project-container {
+    margin: 20px 0px;
+}
+
+#projects .project-container .info .project-name{
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#projects .project-container .info .project-desc {
+    display: block;
+    margin: 5px 0px;
+    padding: 0px 5px;
+}
+
+#projects .project-container .info .buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    margin-top: 5px;
+}
+
+#projects .project-container .info .buttons .test-project {
+    background-color: #3e61fc;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#projects .project-container .info .buttons .test-project:hover {
+    background-color: #2f4ac2;
+}
+
+#projects .project-container .info .buttons .github-link {
+    background-color: #383838;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+
+#projects .project-container .info .buttons .github-link i {
+    font-size: 20px;
+}
+
+
+@keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
