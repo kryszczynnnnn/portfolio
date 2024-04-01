@@ -94,11 +94,17 @@ a {
 }
 
 #experience #exp-icons {
+    display: flex;
+    justify-content: center;
     margin: 10px;
+    width: 100%;
 }
 
-#experience #exp-icons ul li {
-    position: relative;
+#experience #exp-icons #big-screen {
+    display: block;
+}
+
+#experience #exp-icons #big-screen li {
     display: inline;
     border: 1px solid #efefef;
     padding: 4px 10px;
@@ -106,6 +112,38 @@ a {
     border-radius: 8px;
     font-size: 40px;
     transition: all 0.3s ease;
+}
+
+
+#experience #exp-icons #small-screen {
+    display: none;
+    width: 100%;
+    
+}
+
+#experience #exp-icons #small-screen li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin: 5px 30px;
+    height: 30px;
+    width: auto;
+    padding: 5px 5px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+}
+
+#experience #exp-icons #small-screen li i {
+    font-size: 30px;
+}
+
+#experience #exp-icons #small-screen li .lang-text {
+    display: inline;
+    width: 100%;
+    text-align: center;
+    color: #5f5f5f;
 }
 
 #html {
@@ -132,7 +170,7 @@ a {
 #more-exp {
     background-color: #3e61fc;
     padding: 5px 10px;
-    margin: 0px 5px;
+    margin: 5px 5px;
     border-radius: 10px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -155,6 +193,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin: 20px 0px;
 }
 
 #projects .img-frame {
@@ -181,10 +220,6 @@ a {
     width: 300px;
     height: 200px;
     margin: 10px;
-}
-
-#projects .project-container {
-    margin: 20px 0px;
 }
 
 #projects .project-container .info .project-name{
@@ -267,3 +302,35 @@ a {
       );
     }
   }
+
+
+@media screen and (max-width: 445px) {
+
+    #welcome-container{
+        flex-direction: column;
+    }
+
+    #experience {
+        height: 350px;
+    }
+
+    #experience #exp-icons #big-screen {
+        display: none;
+    }
+
+    #experience #exp-icons #small-screen {
+        display: block;
+    }
+
+    #projects .project-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+    
+    #projects .project-container .info {
+        height: 180px;
+    }
+}
